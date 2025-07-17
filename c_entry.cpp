@@ -11,7 +11,7 @@ std::string c_entry(int x) {
 
 
 int main() {
-    std::string asm_code = c_entry(2077); // generate assembly code in a file
+    std::string asm_code = c_entry(31415); // generate assembly code in a file
     std::ofstream output_stream("c_entry.s");
     output_stream << ".globl _c_entry\n"
         << "_c_entry:\n"
