@@ -2,12 +2,11 @@
 #include <cstdio>
 #include <string>
 
-extern "C" int compile_program();
-
+extern "C" int c_entry();
 
 using namespace std;
 int main(int argc, char** argv) {
-    std::cout << compile_program() << std::endl;
+    std::cout << c_entry() << std::endl;
 
     return 0;   
 }
